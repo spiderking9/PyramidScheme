@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<piramida>
+  <!--<uczestnik id="1">
+    <uczestnik id="2"/>
+    <uczestnik id="3">
+      <uczestnik id="4">
+        <uczestnik id="5"/>
+      </uczestnik>
+    </uczestnik>
+  </uczestnik>-->
+  <uczestnik id="1">
+    <uczestnik id="2"/>
+    <uczestnik id="3">
+      <uczestnik id="4"/>
+    </uczestnik>
+    <uczestnik id="6">
+      <uczestnik id="334"/>
+      <uczestnik id="3324"/>
+      <uczestnik id="3314"/>
+      <uczestnik id="3334"/>
+      <uczestnik id="113">
+        <uczestnik id="223">
+          <uczestnik id="55">
+            <uczestnik id="66">
+              <uczestnik id="77">
+                <uczestnik id="88"/>
+              </uczestnik>
+            </uczestnik>
+          </uczestnik>
+        </uczestnik>
+      </uczestnik>
+      <uczestnik id="116">
+        <uczestnik id="33334"/>
+        <uczestnik id="443324"/>
+        <uczestnik id="553314"/>
+        <uczestnik id="663334"/>
+      </uczestnik>
+    </uczestnik>
+  </uczestnik>
+</piramida>
+
