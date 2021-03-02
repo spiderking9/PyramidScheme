@@ -15,7 +15,7 @@ namespace SentePiramidaFinansowa
         public LoadListUsers(LoadXElement listXml)
         {
             nodeList = new List<Node>();
-            InputElementsToListsOff(0, listXml.GetElement(), 0);
+            InputElementsToList(0, listXml.GetElement(), 0);
         }
 
         public IEnumerable<Node> ShowList()
@@ -23,7 +23,7 @@ namespace SentePiramidaFinansowa
             return nodeList.OrderBy(x=>x.NodeId);
         }
 
-        public List<Node> InputElementsToListsOff(int indentLevel, XElement element, int level)
+        public List<Node> InputElementsToList(int indentLevel, XElement element, int level)
         {
 
             if (element.Attribute("id") != null)
@@ -37,7 +37,7 @@ namespace SentePiramidaFinansowa
             }
             foreach (XElement childElement in element.Elements())
             {
-                InputElementsToListsOff(Int32.Parse(element.Attribute("id").Value), childElement, level + 1);
+                InputElementsToList(Int32.Parse(element.Attribute("id").Value), childElement, level + 1);
             }
 
             return nodeList;

@@ -10,9 +10,10 @@ namespace SentePiramidaFinansowa
     {
         public void CalculateChildren(IEnumerable<Node> list)
         {
+            if (list.Count() == 1) return;
             foreach (var item in list.OrderByDescending(w=>w.Level))
             {
-                //if List of childs empty add my parents one children
+                //if List of childs empty, add to my parents.HowManyChildren one 
                 if (!list.Where(x => x.NodeParent == item.NodeId).Any())
                     list.Where(w => w.NodeId == item.NodeParent).FirstOrDefault().HowManyChildren++;
                 //if level= 0 break
